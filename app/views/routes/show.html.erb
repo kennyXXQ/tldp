@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @route.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @route.description %>
+</p>
+
+<p>
+  <strong>Createdate:</strong>
+  <%= @route.createDate %>
+</p>
+
+<p>
+  <strong>Drivedate:</strong>
+  <%= @route.driveDate %>
+</p>
+
+<p>
+  <strong>Indexid:</strong>
+  <%= @route.indexId %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @route.region %>
+</p>
+
+<p>
+  <strong>Regionid:</strong>
+  <%= @route.regionId %>
+</p>
+
+<p>
+  <strong>Routedistance:</strong>
+  <%= @route.routeDistance %>
+</p>
+
+<p>
+  <strong>Routetime:</strong>
+  <%= @route.routeTime %>
+</p>
+
+<p>
+  <strong>Uploader:</strong>
+  <%= @route.uploader %>
+</p>
+
+<p>
+  <strong>Recorder:</strong>
+  <%= @route.recorder %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @route.keyword %>
+</p>
+
+<p>
+  <strong>Pathcameraleft:</strong>
+  <%= @route.pathCameraLeft %>
+</p>
+
+<p>
+  <strong>Pathcameramiddle:</strong>
+  <%= @route.pathCameraMiddle %>
+</p>
+
+<p>
+  <strong>Pathcameraright:</strong>
+  <%= @route.pathCameraRight %>
+</p>
+
+<p>
+  <strong>Pathgps:</strong>
+  <%= @route.pathGPS %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
