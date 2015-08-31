@@ -1,45 +1,61 @@
 
-<hiv class="table-responsive">
-<h2 class="center">All Routes</h2>
-
-
-<table class="table table-responsive table-bordered table-hover jumbotron">
-  <thead>
-    <tr class="info">
+<hiv class="wrapper">
+<h2 class="description">All Routes</h2>
+  <table id="example" class="display table-bordered table-striped table-responsive rwd-table" cellspacing="0" width="100%">
+    <thead class="">
+    <tr>
+      <th>Create Date</th>
       <th>Name</th>
       <th>Description</th>
-      <th>Createdate</th>
-      <th>Drivedate</th>
+      <th>Drive Date</th>
       <th>Region</th>
-      <th>Routedistance</th>
-      <th>Routetime</th>
+      <th>Route Distance</th>
+      <th>Route Time</th>
       <th>Uploader</th>
       <th>Recorder</th>
       <th>Keyword</th>
       <th>Edit</th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
-    <% @routes.each do |route| %>
-      <tr>
-        <td><%= route.name %></td>
-        <td><%= route.description %></td>
-        <td><%= route.createDate %></td>
-        <td><%= route.driveDate %></td>
-        <td><%= route.region %></td>
-        <td><%= route.routeDistance %></td>
-        <td><%= route.routeTime %></td>
-        <td><%= route.uploader %></td>
-        <td><%= route.recorder %></td>
-        <td><%= route.keyword %></td>
-        <td><%= link_to 'Edit', edit_route_path(route), class: "btn btn-large btn-block btn-info"%></td>
+    <tfoot>
+    <tr>
+      <th>Create Date</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Drive Date</th>
+      <th>Region</th>
+      <th>Route Distance</th>
+      <th>Route Time</th>
+      <th>Uploader</th>
+      <th>Recorder</th>
+      <th>Keyword</th>
+      <th>Edit</th>
     </tr>
+    </tfoot>
+
+    <tbody>
+    <% @routes.each do |route| %>
+        <tr>
+          <td><%= route.createDate %></td>
+          <td><%= route.name %></td>
+          <td><%= route.description %></td>
+          <td><%= route.driveDate %></td>
+          <td><%= route.region %></td>
+          <td><%= route.routeDistance %></td>
+          <td><%= route.routeTime %></td>
+          <td><%= route.uploader %></td>
+          <td><%= route.recorder %></td>
+          <td><%= route.keyword %></td>
+          <td><%= link_to 'Edit', edit_route_path(route), class: "btn btn-large btn-block btn-default"%></td>
+        </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+
+
 </hiv>
 <br>
 
 <!--%= link_to 'New Route', new_route_path %-->
-<%= link_to 'Upload a New Route', new_route_path, class: "btn btn-large btn-primary"  %>
+<%= link_to 'Upload a New Route', new_route_path, class: "btn btn-large btn-default"  %>
