@@ -28,24 +28,8 @@
     <%= f.text_field :driveDate %>
   </div>
   <div class="field">
-    <%= f.label :indexId %><br>
-    <%= f.number_field :indexId %>
-  </div>
-  <div class="field">
     <%= f.label :region %><br>
     <%= f.text_field :region %>
-  </div>
-  <div class="field">
-    <%= f.label :regionId %><br>
-    <%= f.number_field :regionId %>
-  </div>
-  <div class="field">
-    <%= f.label :routeDistance %><br>
-    <%= f.number_field :routeDistance %>
-  </div>
-  <div class="field">
-    <%= f.label :routeTime %><br>
-    <%= f.text_field :routeTime %>
   </div>
   <div class="field">
     <%= f.label :uploader %><br>
@@ -61,21 +45,23 @@
   </div>
   <div class="field">
     <%= f.label :pathCameraLeft %><br>
-    <%= f.text_field :pathCameraLeft %>
+    <%= f.file_field :pathCameraLeft %>
   </div>
   <div class="field">
     <%= f.label :pathCameraMiddle %><br>
-    <%= f.text_field :pathCameraMiddle %>
+    <%= f.file_field :pathCameraMiddle %>
   </div>
   <div class="field">
     <%= f.label :pathCameraRight %><br>
-    <%= f.text_field :pathCameraRight %>
+    <%= f.file_field :pathCameraRight %>
   </div>
   <div class="field">
     <%= f.label :pathGPS %><br>
-    <%= f.text_field :pathGPS %>
+    <%= f.file_field :pathGPS %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+

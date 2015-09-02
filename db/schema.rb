@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150827061842) do
+ActiveRecord::Schema.define(version: 20150902112903) do
 
   create_table "routes", force: :cascade do |t|
     t.string   "name"
@@ -32,6 +32,10 @@ ActiveRecord::Schema.define(version: 20150827061842) do
     t.string   "pathGPS"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "name"
   end
 
 end
